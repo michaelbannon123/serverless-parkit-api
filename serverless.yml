@@ -44,6 +44,7 @@ functions:
       - http:
           path: rentals
           method: post
+          authorizer: aws_iam
 
   get:
     # Defines an HTTP API endpoint that calls the main function in getListing.js
@@ -54,6 +55,7 @@ functions:
       - http:
           path: rentals/{id}
           method: get
+          authorizer: aws_iam
 
   list:
     # Defines an HTTP API endpoint that calls the main function in listListing.js
@@ -64,6 +66,7 @@ functions:
       - http:
           path: rentals
           method: get
+          authorizer: aws_iam
 
   update:
     # Defines an HTTP API endpoint that calls the main function in updateListing.js
@@ -74,6 +77,7 @@ functions:
       - http:
           path: rentals/{id}
           method: put
+          authorizer: aws_iam
 
   delete:
     # Defines an HTTP API endpoint that calls the main function in delete.js
@@ -84,3 +88,4 @@ functions:
       - http:
           path: rentals/{id}
           method: delete
+          authorizer: aws_iam
