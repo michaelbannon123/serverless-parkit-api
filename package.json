@@ -3,9 +3,6 @@
   "version": "2.2.0",
   "description": "A final year project building a parking application",
   "main": "handler.js",
-  "scripts": {
-    "test": "serverless-bundle test"
-  },
   "author": "",
   "license": "MIT",
   "repository": {
